@@ -8,5 +8,5 @@ then plotted. The simulation restarted at each dosing event to account for the d
 
 ## Stability of the Compartment Model
 The stability of this model was confirmed by finding the fixed points and substituting them into the Jacobian matrix, allowing the nonlinear system to be linearized near equilibrium points. The eigenvalues of the Jacobian matrix are used to determine stability, where $\lambda>0$ denotes an unstable equilibrium, $\lambda<0$ denotes a stable equilibrium, and $\lambda=0$ is inconclusive. An equilibrium manifold described by the equation 
-$\Sigma = { (S, R_A, R_P) \in \mathbb{R}^3 \mid S + R_A + R_P = 120 }$
+$\Sigma = \lbrace (S, R_A, R_P) \in \mathbb{R}^3 \mid S + R_A + R_P = 120 \rbrace$
 indicating that any combination of tumour subpopulations summing to the carrying capacity K = 120 mm is an equilibrium. For all points on $\Sigma$, the Jacobian yields strictly negative eigenvalues, confirming that the manifold is asymptotically stable.
